@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-3</title>
+</head>
+<body>
+    <a href="#" class="link-3-1" onclick="event.preventDefault()">next page</a>
+    <div>
+        <label for="text-3-1">Начислено</label>
+        <textarea name="" id="" cols="30" rows="10" class="text-3-1"></textarea>
+    </div>
+    <div>
+        <label for="text-3-2">Удержано</label>
+        <textarea name="" id="" cols="30" rows="10" class="text-3-2"></textarea>
+    </div>
+    <div>
+        <label for="text-3-3">Итого</label>
+        <textarea name="" id="" cols="30" rows="10" class="text-3-3"></textarea>
+    </div>
+    <button class="button-3">Подсчитать</button>
+    <a href="link-3-2"></a>
+    <script>
+        let inputGet = document.querySelector(".text-3-1").value;
+        let inputGone = document.querySelector(".text-3-2").value;
+        let difference = inputGet - inputGone;
+        document.querySelector(".button-3").addEventListener("click", (inputGet, inputGone) => document.querySelector(".text-3-3").value = difference)
+    </script>
+</body>
+</html>
