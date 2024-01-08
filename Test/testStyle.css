@@ -4,93 +4,27 @@
 }
 
 body {
-    width: 1140px;
+    width: 1240px;
     margin: auto;
-
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.menu ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
 }
 
-.menu li {
-    font-size: 2rem;
-    
+header {
+    background-color: #0E0D12;
+    height: 1200px;
+    width: ;
 }
 
-.menu a {
-    text-decoration: none;
+.composition {
+    position: relative;
 }
 
-.cart {
-    width: 100px;
-    height: 100px;
-    
+.bmw {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left
 }
-
-.cart img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.cart a {
-    display: block;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.logo a {
-    display: block;
-}
-
-.burger {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 100px;
-    height: 50px;
-    display: none;
-    
-}
-
-.burger span {
-    width: 100%;
-    height: 10px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-@media (max-width: 1140px) {
-    body {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 640px) {
-    body {
-        width: 100%;
-    }
-    .menu {
-        display: none;
-    }
-    .burger {
-        display: flex;
-    }
+.arc {
+    position: absolute;
+    top: -100px;
 }
